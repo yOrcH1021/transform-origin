@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Transform Origin</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Transform Origin</h1>
+            <div class="row text-center">
+                <div class="col-sm-6">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="square square-2"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="square square-3"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="square square-4"></div>
+                </div>
+            </div>
+            <h1>sass</h1>
+            <div class="well pull-left full-width">
+                <span class="red">.square</span>
+                <div class="tab">
+                    <div class="pull-left full-width">
+                        <span class="black">@include border-radius</span><span class="include">(<span class="red">5px</span>)</span>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="blue">position:</span><span class="black">relative</span>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="blue">border:</span><span class="black">1px solid</span>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="blue">margin:</span><span class="black">15px 0</span>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="blue">height:</span><span class="black">200px</span>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="blue">width:</span><span class="black">100%</span>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="black">&<span class="red">:before</span></span>
+                    </div>
+                    <div class="tab">
+                        <div class="pull-left full-width">
+                            <span class="blue">top:</span><span class="black">calc(50% - 14px)</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="blue">letter-spacing:</span><span class="black">-1px</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="blue">position:</span><span class="black">absolute</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="blue">font-size:</span><span class="black">20px</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="blue">width:</span><span class="black">100%</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="blue">left:</span><span class="black">0</span>
+                        </div>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="black">&<span class="red">:after</span></span>
+                    </div>
+                    <div class="tab">
+                        <div class="pull-left full-width">
+                            <span class="black">@include border-radius</span><span class="black">(<span class="red">100%</span>)</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="blue">position:</span><span class="black">absolute</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="blue">background:</span><span class="black">red</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="blue">height:</span><span class="black">10px</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="blue">width:</span><span class="black">10px</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="blue">content:</span><span class="black">' '</span>
+                        </div>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="black">&<span class="red">.square-1</span></span>
+                    </div>
+                    <div class="tab">
+                        <div class="pull-left full-width">
+                            <span class="black">@include transform-origin</span><span class="black">(<span class="red">0%, 0%</span>)</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">@include transform</span><span class="black">(<span class="blue">rotate</span>(<span class="red">-2.5deg</span>))</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">&<span class="red">:before</span></span>
+                        </div>
+                        <div class="tab">
+                            <span class="blue">content:</span><span class="black">'<span class="blue">transform-origin:</span> <span class="red">0% 0%</span>'</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">&<span class="red">:after</span></span>
+                        </div>
+                        <div class="tab">
+                            <div class="pull-left full-width">
+                                <span class="blue">bottom:</span><span class="red">-5px</span>
+                            </div>
+                            <div class="pull-left full-width">
+                                <span class="blue">left:</span><span class="red">-5px</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="black">&<span class="red">.square-2</span></span>
+                    </div>
+                    <div class="tab">
+                        <div class="pull-left full-width">
+                            <span class="black">@include transform-origin</span><span class="black">(<span class="red">100%, 0%</span>)</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">@include transform</span><span class="black">(<span class="blue">rotate</span>(<span class="red">2.5deg</span>))</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">&<span class="red">:before</span></span>
+                        </div>
+                        <div class="tab">
+                            <span class="blue">content:</span><span class="black">'<span class="blue">transform-origin:</span> <span class="red">100% 0%</span>'</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">&<span class="red">:after</span></span>
+                        </div>
+                        <div class="tab">
+                            <div class="pull-left full-width">
+                                <span class="blue">bottom:</span><span class="red">-5px</span>
+                            </div>
+                            <div class="pull-left full-width">
+                                <span class="blue">right:</span><span class="red">-5px</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="black">&<span class="red">.square-3</span></span>
+                    </div>
+                    <div class="tab">
+                        <div class="pull-left full-width">
+                            <span class="black">@include transform-origin</span><span class="black">(<span class="red">0%, 100%</span>)</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">@include transform</span><span class="black">(<span class="blue">rotate</span>(<span class="red">2.5deg</span>))</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">&<span class="red">:before</span></span>
+                        </div>
+                        <div class="tab">
+                            <span class="blue">content:</span><span class="black">'<span class="blue">transform-origin:</span> <span class="red">0% 100%</span>'</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">&<span class="red">:after</span></span>
+                        </div>
+                        <div class="tab">
+                            <div class="pull-left full-width">
+                                <span class="blue">left:</span><span class="red">-5px</span>
+                            </div>
+                            <div class="pull-left full-width">
+                                <span class="blue">top:</span><span class="red">-5px</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pull-left full-width">
+                        <span class="black">&<span class="red">.square-4</span></span>
+                    </div>
+                    <div class="tab">
+                        <div class="pull-left full-width">
+                            <span class="black">@include transform-origin</span><span class="black">(<span class="red">100%, 100%</span>)</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">@include transform</span><span class="black">(<span class="blue">rotate</span>(<span class="red">-2.5deg</span>))</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">&<span class="red">:before</span></span>
+                        </div>
+                        <div class="tab">
+                            <span class="blue">content:</span><span class="black">'<span class="blue">transform-origin:</span> <span class="red">100% 100%</span>'</span>
+                        </div>
+                        <div class="pull-left full-width">
+                            <span class="black">&<span class="red">:after</span></span>
+                        </div>
+                        <div class="tab">
+                            <div class="pull-left full-width">
+                                <span class="blue">right:</span><span class="red">-5px</span>
+                            </div>
+                            <div class="pull-left full-width">
+                                <span class="blue">top:</span><span class="red">-5px</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
